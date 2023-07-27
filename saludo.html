@@ -26,7 +26,7 @@
             margin: auto;
             border: 3px solid #000000;
             border-radius: 5px;
-            box-shadow: 7px 7px 5px 0px #EDE6D1;
+            box-shadow: 7px 7px 5px 0px #D8C6A6;
 
         }
 
@@ -91,13 +91,13 @@
 
 function dispalyGreetings(today){
         hrs = today.getHours();
-        name=" ,Diana."
+        name="Diana."
         if (hrs < 12)
-            greet = 'Buenos Dias  '+name;
+            greet = 'Buenos Dias,  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = 'Buenas Tardes '+name;
+            greet = 'Buenas Tardes, '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Buenas Noches  '+name;
+            greet = 'Buenas Noches,  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
